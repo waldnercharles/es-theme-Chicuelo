@@ -22,204 +22,272 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 -->
 
 <theme>
-<formatVersion>4</formatVersion>
- 
+	<formatVersion>4</formatVersion>
 
-<!-- System View -->
+	<!-- System View -->
+	<feature supported="carousel">
+		<view name="system">
 
-<feature supported="carousel">
-<view name="system">
- <image name="background" extra="true">
-	<tile>false</tile>
-	<path>./_assets/system-global-bg.jpg</path>
-	<size>1 1</size>
-	<pos>0 0</pos>
- </image>
- 
- <text name="shortdescription" extra="true">
-	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
-	<alignment>center</alignment>
-	<forceUppercase>1</forceUppercase>
-	<fontSize>0.03</fontSize>
-	<color>818181</color>
-	<origin>0.5 0.5</origin>
-	<pos>0.232 0.25</pos>
-	<size>0.32 0.1</size>
- </text>
+			<image name="bg" extra="true">
+				<path>./_assets/bg.png</path>
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<zIndex>50</zIndex>
+			</image>
 
- <image name="logo">
-	<path>./_assets/logos/${system.theme}.svg</path>
-	<color>4f5159</color>
+			<image name="bg-pic" extra="true">
+				<path>./_assets/characters/${system.theme}.png</path>
+				<tile>false</tile>
+				<pos>0.45 0.1131</pos>
+				<size>0.4774 0.7738</size>
+				<zIndex>20</zIndex>
+			</image>
 
- </image>
+			<image name="bg-pic-brighten" extra="true">
+				<path>./_assets/white.png</path>
+				<tile>false</tile>
+				<color>e6d9ff22</color>
+				<pos>0.45 0.09</pos>
+				<size>0.50 0.82</size>
+				<zIndex>25</zIndex>
+			</image>
 
- <carousel name="systemcarousel">
-	<type>vertical</type>
-	<color>00000000</color>
-	<origin>0.5 0.5</origin>
-	<pos>0.232 0.415</pos>
-	<size>1 .4</size> 
-	<logoScale>0.7</logoScale>
-	<logoSize>0.3 0.2</logoSize>
-	<maxLogoCount>1</maxLogoCount>
- </carousel>
+			<image name="bg-pic-scanlines" extra="true">
+				<path>./_assets/scanlines-h.png</path>
+				<tile>true</tile>
+				<color>ffffff80</color>
+				<pos>0.45 0.09</pos>
+				<size>0.50 0.82</size>
+				<zIndex>30</zIndex>
+			</image>
 
- <text name="systemInfo">
-	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
-	<alignment>center</alignment>
-	<backgroundColor>00000000</backgroundColor>
-	<color>4f5159</color>
-	<origin>0.5 0.5</origin>
-	<pos>0.232 0.77</pos>
-	<size>0.980 0.050</size>
-	<fontSize>0.025</fontSize>
- </text>
- 
- <text name="longdescription" extra="true">
-	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
-	<alignment>center</alignment>
-	<forceUppercase>0</forceUppercase>
-	<fontSize>0.02</fontSize>
-	<color>818181</color>
-	<origin>0.5 0.5</origin>
-	<pos>0.232 0.58</pos>
-	<size>0.20 0.1</size>
- </text>
- 
-<!--
+			<image name="character" extra="true">
+				<path>./_assets/characters/${system.theme}-character.png</path>
+				<tile>false</tile>
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<zIndex>100</zIndex>
+			</image>
 
- <image name="indicator" extra="true">
-	<path>./_assets/indicators/${system.theme}.png</path>
-	<tile>false</tile>
-	<origin>0.5 0.5</origin>
-	<pos>0.028 0.5</pos>
-	<size>0.008 0.65</size>
-  </image>
+			<!-- <text name="shortdescription" extra="true">
+				<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+				<alignment>center</alignment>
+				<forceUppercase>1</forceUppercase>
+				<fontSize>0.03</fontSize>
+				<color>81818100</color>
+				<origin>0.5 0.5</origin>
+				<pos>0.25 0.25</pos>
+				<size>0.32 0.1</size>
+				<zIndex>60</zIndex>
+			</text> -->
 
--->
+			<image name="logo">
+				<path>./_assets/logos/${system.theme}.svg</path>
+				<color>000000</color>
+				<!-- <color>4f5159</color> -->
 
- <image name="character" extra="true">
-	<path>./_assets/characters/${system.theme}.jpg</path>
-	<tile>false</tile>
-	<origin>0.5 0.5</origin>
-	<pos>0.678 0.5</pos>
-	<size>0.535 0.85</size>
-  </image>
- 
- <image name="controller" extra="true">
-	<path>./_assets/controllers/${system.theme}.png</path>
-	<tile>false</tile>
-	<origin>1 1</origin>
-	<pos>0.9785 0.975</pos>
-	<size>0.275 0.4</size>
-  </image>
+			</image>
 
- <helpsystem name="help">
-    <fontPath>./_assets/Roboto-Medium.ttf</fontPath>
-    <fontSize>0.019</fontSize>
-	<pos>0.05 0.97</pos>
-	<textColor>23232f</textColor>
-    <iconColor>23232f</iconColor>
- </helpsystem>
-  
-</view>
-</feature>
+      <image name="gradient" extra="true">
+        <path>./_assets/gradient.png</path>
+        <tile>true</tile>
+        <pos>0.06 0.05</pos>
+        <size>0.38 0.9</size>
+        <zIndex>70</zIndex>
 
+      </image>
 
+			<carousel name="systemcarousel">
+				<type>vertical_wheel</type>
+				<color>00000000</color>
+				<origin>0 0</origin>
+				<pos>0.05 0.05</pos>
+				<size>0.4 0.9</size>
+				<logoScale>0.7</logoScale>
+				<logoSize>0.35 0.2</logoSize>
+        <logoRotation>7</logoRotation>
+        <logoRotationOrigin>-5 0.5</logoRotationOrigin>
+				<maxLogoCount>2</maxLogoCount>
+				<zIndex>60</zIndex>
+			</carousel>
 
+			<text name="systemInfo">
+				<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+				<alignment>center</alignment>
+				<backgroundColor>00000000</backgroundColor>
+				<color>000000</color>
+				<origin>0.5 0.5</origin>
+				<pos>0.25 0.59</pos>
+				<size>0.980 0.050</size>
+				<fontSize>0.025</fontSize>
+				<zIndex>60</zIndex>
+			</text>
 
+			<!-- <text name="longdescription" extra="true">
+				<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+				<alignment>center</alignment>
+				<forceUppercase>0</forceUppercase>
+				<fontSize>0.02</fontSize>
+				<color>81818100</color>
+				<origin>0.5 0.5</origin>
+				<pos>0.25 0.58</pos>
+				<size>0.20 0.1</size>
+				<zIndex>60</zIndex>
+			</text> -->
 
-<!-- Gamelist View -->
+			<helpsystem name="help">
+				<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+				<fontSize>0.019</fontSize>
+				<pos>0.05 0.97</pos>
+				<textColor>23232f</textColor>
+				<iconColor>23232f</iconColor>
+			</helpsystem>
 
-<view name="basic, detailed, video, grid">
+		</view>
+	</feature>
 
- <image name="background" extra="true">
-	<tile>false</tile>
-	<path>./_assets/ingame-global-bg.jpg</path>
-	<size>1 1</size>
-	<pos>0 0</pos>
- </image>
+	<view name="basic, detailed, video, grid">
 
- <image name="logo2" extra="true">
-	<path>./_assets/logos/${system.theme}.svg</path>
-	<color>4f5159</color>
-	<origin>0.5 0.5</origin>
-	<pos>0.553 0.821</pos>
-	<maxSize>0.16 0.16</maxSize>
- </image>
- 
- <text name="shortdescription" extra="true">
-	<pos>1 1</pos>
- </text>
- 
- <text name="longdescription" extra="true">
-	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
-	<forceUppercase>0</forceUppercase>
-	<fontSize>0.02</fontSize>
-	<color>818181</color>
-	<origin>0.5 0.5</origin>
-	<pos>0.789 0.821</pos>
-	<size>0.25 0.2</size>
- </text>
- 
-<textlist name="gamelist">
-	<selectorColor>ffffff</selectorColor>
-	<selectorImagePath>./_assets/icon.png</selectorImagePath>
-	<selectedColor>78c7ef</selectedColor>
-	<selectorHeight>.05</selectorHeight>
-	<primaryColor>dee0e8</primaryColor>
-	<secondaryColor>eac428</secondaryColor>
-	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
-	<alignment>left</alignment>
-	<forceUppercase>1</forceUppercase>
-	<pos>0.07 0.12</pos>
-	<size>0.395 0.75</size>
-	<fontSize>0.03</fontSize>
-	<lineSpacing>1.70</lineSpacing>
-	<horizontalMargin>0.05</horizontalMargin>
-</textlist>
+		<image name="bg" extra="true">
+			<path>./_assets/bg.png</path>
+			<tile>false</tile>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<zIndex>50</zIndex>
+		</image>
 
-<helpsystem name="help">
-    <fontPath>./_assets/Roboto-Medium.ttf</fontPath>
-    <fontSize>0.020</fontSize>
-	<pos>0.48 0.96</pos>
-	<textColor>23232f</textColor>
-    <iconColor>23232f</iconColor>
-</helpsystem>
+		<image name="bg-pic-brighten" extra="true">
+			<path>./_assets/white.png</path>
+			<tile>false</tile>
+			<color>e6d9ff22</color>
+			<pos>0.45 0.09</pos>
+			<size>0.50 0.82</size>
+			<zIndex>25</zIndex>
+		</image>
 
-<!-- Hide Unused Elements -->	
-<text name="md_description, md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
-	<pos>1 1</pos>
-</text>
-<datetime name="md_lastplayed, md_releasedate">
-	<pos>1 1</pos>
-</datetime>
-<rating name="md_rating">
-	<pos>1 1</pos>
-</rating>
+		<image name="bg-pic-scanlines" extra="true">
+			<path>./_assets/scanlines-h.png</path>
+			<tile>true</tile>
+			<color>ffffff80</color>
+			<pos>0.45 0.09</pos>
+			<size>0.50 0.82</size>
+			<zIndex>30</zIndex>
+		</image>
 
-</view>
+		<image name="logo" extra="true">
+			<path>./_assets/logos/${system.theme}.svg</path>
+			<color>f0f0f0</color>
+			<origin>0.5 0.5</origin>
+			<pos>0.25 0.5</pos>
+      <tile>false</tile>
+      <maxSize>0.245 0.14</maxSize>
+			<zIndex>80</zIndex>
+		</image>
 
-<view name="basic, detailed, grid">
- <image name="md_image">
-	<origin>0.5 0.5</origin>
-	<pos>0.6925 0.3915</pos>
-	<maxSize>0.4292 0.5297</maxSize>
- </image>
-</view>
+    <!-- <image name="logo2" extra="true">
+			<path>./_assets/logos/${system.theme}.svg</path>
+			<color>e8e8e8</color>
+			<origin>0.5 0.5</origin>
+			<pos>0.2475 0.5025</pos>
+      <tile>false</tile>
+      <maxSize>0.245 0.14</maxSize>
+			<zIndex>75</zIndex>
+		</image> -->
 
-<feature supported="video">
+		<text name="shortdescription, longdescription" extra="true">
+			<pos>1 1</pos>
+		</text>
 
-<view name="video">
- <video name="md_video">
-	<origin>0.5 0.5</origin>
-	<pos>0.6925 0.3915</pos>
-	<maxSize>0.4292 0.5297</maxSize>
-	<delay>2</delay>
-	<showSnapshotNoVideo>true</showSnapshotNoVideo>
-	<showSnapshotDelay>true</showSnapshotDelay>
- </video>
-</view>
-</feature>
+		<textlist name="gamelist">
+			<selectorColor>ff0000</selectorColor>
+			<selectorImagePath>./_assets/icon.png</selectorImagePath>
+			<selectedColor>ff0000</selectedColor>
+			<!-- <selectedColor>78c7ef</selectedColor> -->
+			<selectorHeight>.05</selectorHeight>
+			<primaryColor>818181</primaryColor>
+			<secondaryColor>00ff00</secondaryColor>
+			<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+			<alignment>left</alignment>
+			<forceUppercase>1</forceUppercase>
+			<pos>0.05 0.10</pos>
+			<size>0.4 0.8</size>
+			<fontSize>0.03</fontSize>
+			<lineSpacing>1.70</lineSpacing>
+			<horizontalMargin>0.05</horizontalMargin>
+			<zIndex>100</zIndex>
+		</textlist>
+
+		<helpsystem name="help">
+			<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+			<fontSize>0.020</fontSize>
+			<pos>0.48 0.96</pos>
+			<textColor>23232f</textColor>
+			<iconColor>23232f</iconColor>
+		</helpsystem>
+
+		<!-- Hide Unused Elements -->
+		<image name="md_image, md_marquee">
+			<origin>0 0</origin>
+			<pos>1 1</pos>
+		</image>
+
+		<text name="md_description, md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
+			<origin>0 0</origin>
+			<pos>1 1</pos>
+		</text>
+
+		<datetime name="md_lastplayed, md_releasedate">
+			<origin>0 0</origin>
+			<pos>1 1</pos>
+		</datetime>
+
+		<rating name="md_rating">
+			<origin>0 0</origin>
+			<pos>1 1</pos>
+		</rating>
+
+	</view>
+
+	<feature supported="video">
+		<view name="video">
+			<!-- <image name="crtbezel" extra="true"> -->
+				<!-- <tile>false</tile> -->
+				<!-- <path>./_assets/crt-bezel.svg</path> -->
+				<!-- <origin>0.5 0.5</origin> -->
+				<!-- <pos>0.6925 0.3915</pos> -->
+				<!-- <size>0.3891 0.5297</size> -->
+				<!-- <zIndex>150</zIndex> -->
+			<!-- </image> -->
+			<!-- <image name="video-scanlines" extra="true"> -->
+				<!-- <tile>true</tile> -->
+				<!-- <path>./_assets/scanlines-h.png</path> -->
+				<!-- <color>ffffff80</color> -->
+				<!-- <origin>0.5 0.5</origin> -->
+				<!-- <pos>0.6925 0.3915</pos> -->
+				<!-- <size>0.3635 0.4852</size> -->
+				<!-- <zIndex>125</zIndex> -->
+			<!-- </image> -->
+			<!-- <image name="video-brighten" extra="true"> -->
+				<!-- <tile>true</tile> -->
+				<!-- <path>./_assets/white.png</path> -->
+				<!-- <color>e6d9ff1a</color> -->
+				<!-- <origin>0.5 0.5</origin> -->
+				<!-- <pos>0.6925 0.3915</pos> -->
+				<!-- <size>0.3635 0.4852</size> -->
+				<!-- <zIndex>120</zIndex> -->
+			<!-- </image> -->
+			<video name="md_video">
+				<origin>1 0</origin>
+				<pos>0.9302 0.12445</pos>
+				<!-- <maxSize>0.4292 0.5297</maxSize> -->
+				<maxSize>0.5625 0.7511</maxSize>
+				<delay>0</delay>
+				<showSnapshotNoVideo>false</showSnapshotNoVideo>
+				<showSnapshotDelay>false</showSnapshotDelay>
+				<zIndex>20</zIndex>
+			</video>
+		</view>
+	</feature>
 
 </theme>
