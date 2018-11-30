@@ -177,23 +177,23 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 
 		<image name="logo" extra="true">
 			<path>./_assets/logos/${system.theme}.svg</path>
-			<color>f0f0f0</color>
+			<color>e0e0e0</color>
 			<origin>0.5 0.5</origin>
 			<pos>0.25 0.5</pos>
-      <tile>false</tile>
-      <maxSize>0.245 0.14</maxSize>
+            <tile>false</tile>
+            <maxSize>0.245 0.14</maxSize>
 			<zIndex>80</zIndex>
 		</image>
 
-    <!-- <image name="logo2" extra="true">
+        <image name="logo2" extra="true">
 			<path>./_assets/logos/${system.theme}.svg</path>
-			<color>e8e8e8</color>
+			<color>eeeeee</color>
 			<origin>0.5 0.5</origin>
-			<pos>0.2475 0.5025</pos>
-      <tile>false</tile>
-      <maxSize>0.245 0.14</maxSize>
+			<pos>0.24875 0.5025</pos>
+            <tile>false</tile>
+            <maxSize>0.245 0.14</maxSize>
 			<zIndex>75</zIndex>
-		</image> -->
+		</image>
 
 		<text name="shortdescription, longdescription" extra="true">
 			<pos>1 1</pos>
