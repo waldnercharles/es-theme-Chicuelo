@@ -36,7 +36,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 			</image>
 
 			<image name="bg-pic" extra="true">
-				<path>./_assets/characters/${system.theme}.png</path>
+				<path>./_assets/characters/${system.theme}.jpg</path>
 				<tile>false</tile>
 				<pos>0.45 0.1131</pos>
 				<size>0.4774 0.7738</size>
